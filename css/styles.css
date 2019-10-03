@@ -1,92 +1,109 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
 
 body {
-    background: rgba(0, 0, 0, .5);
-    display: grid;
-    grid-template-areas:
-    "screen screen screen screen"
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "button button button button";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 700px;
-    margin: 15% auto 0 auto;
-    width: 400px; 
+	background: rgba(0, 0, 0, .75);
+	display: grid;
+	grid-template-areas:
+	"screen screen screen screen"
+	"button button button button"
+	"button button button button"
+	"button button button button"
+	"button button button button";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	height: 700px;
+	margin: 15% auto 0 auto;
+	width: 400px; 
 }
 
 .screen {
-    background: rgba(0, 0, 0, .75);
-    grid-area: screen;
-    grid-column-end: span 4;
-    grid-column-start: 1;
+	background: rgba(0, 0, 0, .75);
+	grid-area: screen;
+	grid-column-end: span 4;
+	grid-column-start: 1;
 }
 
 .display {
-    background-color: rgb(139, 140, 114);
-    border: 2px solid rgba(0, 0, 0, .5);
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 4em;
-    height: 105px;
-    margin: 30px auto 0 auto;
-    text-align: right;
-    width: 86%;
+	background-color: rgb(139, 140, 114);
+	border: 2px solid rgba(0, 0, 0, .5);
+	border-radius: 4px;
+	color: rgb(0, 0, 0);
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 4em;
+	height: 105px;
+	margin: 30px auto 0 auto;
+	text-align: right;
+	width: 86%;
 }
 
 .buttons {
-    background: rgba(0, 0, 0, .75);   
-    display: grid;
-    grid-area: button;
-    grid-column-end: span 4;
-    grid-column-start: 1;
-    grid-row-end: span 3;
-    grid-row-start: 2;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    padding: 0 13px 20px 13px;
+	background: rgba(0, 0, 0, .75);   
+	display: grid;
+	grid-area: button;
+	grid-column-end: span 4;
+	grid-column-start: 1;
+	grid-row-end: span 3;
+	grid-row-start: 2;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	padding: 0 13px 20px 13px;
 }
 
 button {
-    align-self: center;
-    background: rgba(255, 255, 255, .75);
-    border: none;
-    border-radius: 4px;
-    color: rgba(0, 0, 0, .75);
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2em;
-    height: 60%;
-    justify-self: center;
-    margin-top: 20px;
-    width: 68%;
+	align-self: center;
+	background: rgba(255, 255, 255, .75);
+	border: none;
+	border-radius: 4px;
+	color: rgba(0, 0, 0, .75);
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 2em;
+	height: 60%;
+	justify-self: center;
+	margin-top: 20px;
+	width: 68%;
 }
 
 #multiply {
-    padding-top: 15%;
+  padding-top: 15%;
 }
 
 #divide {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-top:6%;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top:6%;
 }
 
 #add,
 #subtract,
 #multiply,
 #divide {
-    background: rgb(166, 86, 68);
+  background: rgb(166, 86, 68);
 }
 
 #clear {
-    background: rgb(89, 33, 21);
-    color: rgba(255, 255, 255, .75);
-    margin-right: 5%;
+	background: rgb(89, 33, 21);
+	color: rgba(255, 255, 255, .75);
+	margin-right: 5%;
 }
 
 #equals {
-    background: rgb(217, 128, 108);
-    color: rgba(255, 255, 255, .75);
+	background: rgb(217, 128, 108);
+	color: rgba(255, 255, 255, .75);
+}
+
+.dev {
+	font-family: 'Share Tech Mono', monospace;
+	margin-top: 5%;
+	text-align: center;
+	width: 400px;
+}
+
+.dev a {
+	color: rgb(217, 128, 108);
+	text-decoration: none;
+}
+
+.dev a:hover {
+	color: rgb(166, 86, 68);
+	text-decoration: none;
 }
